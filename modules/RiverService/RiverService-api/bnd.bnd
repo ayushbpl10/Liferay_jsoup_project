@@ -1,0 +1,7 @@
+Bundle-SymbolicName: riverservice-api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.river.exception,\
+	com.river.model,\
+	com.river.service,\
+	com.river.service.persistence

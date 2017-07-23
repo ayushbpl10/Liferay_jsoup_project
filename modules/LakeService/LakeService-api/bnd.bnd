@@ -1,0 +1,7 @@
+Bundle-SymbolicName: lakeservice-api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.lake.exception,\
+	com.lake.model,\
+	com.lake.service,\
+	com.lake.service.persistence

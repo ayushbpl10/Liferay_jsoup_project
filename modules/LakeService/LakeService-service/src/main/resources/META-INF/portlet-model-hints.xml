@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.lake.model.lakes">
+		<field name="lakeid" type="int" />
+		<field name="name" type="String" />
+		<field name="url" type="String" />
+	</model>
+</model-hints>

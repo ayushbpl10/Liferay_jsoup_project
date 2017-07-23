@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+
+<service-builder package-path="com.lake">
+	<namespace>Sample</namespace>
+    <entity name="lakes" local-service="true" remote-service="false">
+        <column name="lakeid" type="int" primary="true" id-type="increment"></column>
+        <column name="name" type="String"></column>
+        <column name="url" type="String"></column>
+    </entity>
+	
+</service-builder>
