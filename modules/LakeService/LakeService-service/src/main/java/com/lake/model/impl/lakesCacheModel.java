@@ -63,7 +63,7 @@ public class lakesCacheModel implements CacheModel<lakes>, Externalizable {
 
 	@Override
 	public String toString() {
-		StringBundler sb = new StringBundler(7);
+		StringBundler sb = new StringBundler(31);
 
 		sb.append("{lakeid=");
 		sb.append(lakeid);
@@ -71,6 +71,30 @@ public class lakesCacheModel implements CacheModel<lakes>, Externalizable {
 		sb.append(name);
 		sb.append(", url=");
 		sb.append(url);
+		sb.append(", jan=");
+		sb.append(jan);
+		sb.append(", feb=");
+		sb.append(feb);
+		sb.append(", mar=");
+		sb.append(mar);
+		sb.append(", apr=");
+		sb.append(apr);
+		sb.append(", may=");
+		sb.append(may);
+		sb.append(", june=");
+		sb.append(june);
+		sb.append(", july=");
+		sb.append(july);
+		sb.append(", aug=");
+		sb.append(aug);
+		sb.append(", sep=");
+		sb.append(sep);
+		sb.append(", oct=");
+		sb.append(oct);
+		sb.append(", nov=");
+		sb.append(nov);
+		sb.append(", dec_=");
+		sb.append(dec_);
 		sb.append("}");
 
 		return sb.toString();
@@ -96,6 +120,19 @@ public class lakesCacheModel implements CacheModel<lakes>, Externalizable {
 			lakesImpl.setUrl(url);
 		}
 
+		lakesImpl.setJan(jan);
+		lakesImpl.setFeb(feb);
+		lakesImpl.setMar(mar);
+		lakesImpl.setApr(apr);
+		lakesImpl.setMay(may);
+		lakesImpl.setJune(june);
+		lakesImpl.setJuly(july);
+		lakesImpl.setAug(aug);
+		lakesImpl.setSep(sep);
+		lakesImpl.setOct(oct);
+		lakesImpl.setNov(nov);
+		lakesImpl.setDec_(dec_);
+
 		lakesImpl.resetOriginalValues();
 
 		return lakesImpl;
@@ -106,6 +143,30 @@ public class lakesCacheModel implements CacheModel<lakes>, Externalizable {
 		lakeid = objectInput.readInt();
 		name = objectInput.readUTF();
 		url = objectInput.readUTF();
+
+		jan = objectInput.readDouble();
+
+		feb = objectInput.readDouble();
+
+		mar = objectInput.readDouble();
+
+		apr = objectInput.readDouble();
+
+		may = objectInput.readDouble();
+
+		june = objectInput.readDouble();
+
+		july = objectInput.readDouble();
+
+		aug = objectInput.readDouble();
+
+		sep = objectInput.readDouble();
+
+		oct = objectInput.readDouble();
+
+		nov = objectInput.readDouble();
+
+		dec_ = objectInput.readDouble();
 	}
 
 	@Override
@@ -126,9 +187,45 @@ public class lakesCacheModel implements CacheModel<lakes>, Externalizable {
 		else {
 			objectOutput.writeUTF(url);
 		}
+
+		objectOutput.writeDouble(jan);
+
+		objectOutput.writeDouble(feb);
+
+		objectOutput.writeDouble(mar);
+
+		objectOutput.writeDouble(apr);
+
+		objectOutput.writeDouble(may);
+
+		objectOutput.writeDouble(june);
+
+		objectOutput.writeDouble(july);
+
+		objectOutput.writeDouble(aug);
+
+		objectOutput.writeDouble(sep);
+
+		objectOutput.writeDouble(oct);
+
+		objectOutput.writeDouble(nov);
+
+		objectOutput.writeDouble(dec_);
 	}
 
 	public int lakeid;
 	public String name;
 	public String url;
+	public double jan;
+	public double feb;
+	public double mar;
+	public double apr;
+	public double may;
+	public double june;
+	public double july;
+	public double aug;
+	public double sep;
+	public double oct;
+	public double nov;
+	public double dec_;
 }

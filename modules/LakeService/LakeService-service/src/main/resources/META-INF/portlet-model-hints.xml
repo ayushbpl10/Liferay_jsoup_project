@@ -5,5 +5,17 @@
 		<field name="lakeid" type="int" />
 		<field name="name" type="String" />
 		<field name="url" type="String" />
+		<field name="jan" type="double" />
+		<field name="feb" type="double" />
+		<field name="mar" type="double" />
+		<field name="apr" type="double" />
+		<field name="may" type="double" />
+		<field name="june" type="double" />
+		<field name="july" type="double" />
+		<field name="aug" type="double" />
+		<field name="sep" type="double" />
+		<field name="oct" type="double" />
+		<field name="nov" type="double" />
+		<field name="dec_" type="double" />
 	</model>
 </model-hints>

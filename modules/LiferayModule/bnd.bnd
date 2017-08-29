@@ -1,2 +1,3 @@
 Bundle-SymbolicName: liferaymodule
 Bundle-Version: 1.0.0
+Web-ContextPath: /my-custom-portlet

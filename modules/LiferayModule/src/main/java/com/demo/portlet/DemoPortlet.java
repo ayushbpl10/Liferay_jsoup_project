@@ -69,6 +69,7 @@ public class DemoPortlet extends MVCPortlet {
 			System.out.println(lake.getLakeid());
 			System.out.println(lake.getName());
 			System.out.println(lake.getUrl());
+			System.out.println(lake.getJan());
 		}
 		
 			actionRequest.setAttribute("Lakes", lakeslist);

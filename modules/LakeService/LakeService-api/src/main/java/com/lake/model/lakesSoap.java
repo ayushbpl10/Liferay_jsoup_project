@@ -35,6 +35,18 @@ public class lakesSoap implements Serializable {
 		soapModel.setLakeid(model.getLakeid());
 		soapModel.setName(model.getName());
 		soapModel.setUrl(model.getUrl());
+		soapModel.setJan(model.getJan());
+		soapModel.setFeb(model.getFeb());
+		soapModel.setMar(model.getMar());
+		soapModel.setApr(model.getApr());
+		soapModel.setMay(model.getMay());
+		soapModel.setJune(model.getJune());
+		soapModel.setJuly(model.getJuly());
+		soapModel.setAug(model.getAug());
+		soapModel.setSep(model.getSep());
+		soapModel.setOct(model.getOct());
+		soapModel.setNov(model.getNov());
+		soapModel.setDec_(model.getDec_());
 
 		return soapModel;
 	}
@@ -111,7 +123,115 @@ public class lakesSoap implements Serializable {
 		_url = url;
 	}
 
+	public double getJan() {
+		return _jan;
+	}
+
+	public void setJan(double jan) {
+		_jan = jan;
+	}
+
+	public double getFeb() {
+		return _feb;
+	}
+
+	public void setFeb(double feb) {
+		_feb = feb;
+	}
+
+	public double getMar() {
+		return _mar;
+	}
+
+	public void setMar(double mar) {
+		_mar = mar;
+	}
+
+	public double getApr() {
+		return _apr;
+	}
+
+	public void setApr(double apr) {
+		_apr = apr;
+	}
+
+	public double getMay() {
+		return _may;
+	}
+
+	public void setMay(double may) {
+		_may = may;
+	}
+
+	public double getJune() {
+		return _june;
+	}
+
+	public void setJune(double june) {
+		_june = june;
+	}
+
+	public double getJuly() {
+		return _july;
+	}
+
+	public void setJuly(double july) {
+		_july = july;
+	}
+
+	public double getAug() {
+		return _aug;
+	}
+
+	public void setAug(double aug) {
+		_aug = aug;
+	}
+
+	public double getSep() {
+		return _sep;
+	}
+
+	public void setSep(double sep) {
+		_sep = sep;
+	}
+
+	public double getOct() {
+		return _oct;
+	}
+
+	public void setOct(double oct) {
+		_oct = oct;
+	}
+
+	public double getNov() {
+		return _nov;
+	}
+
+	public void setNov(double nov) {
+		_nov = nov;
+	}
+
+	public double getDec_() {
+		return _dec_;
+	}
+
+	public void setDec_(double dec_) {
+		_dec_ = dec_;
+	}
+
 	private int _lakeid;
 	private String _name;
 	private String _url;
+	private double _jan;
+	private double _feb;
+	private double _mar;
+	private double _apr;
+	private double _may;
+	private double _june;
+	private double _july;
+	private double _aug;
+	private double _sep;
+	private double _oct;
+	private double _nov;
+	private double _dec_;
 }

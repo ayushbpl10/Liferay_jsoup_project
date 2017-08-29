@@ -3,11 +3,23 @@
 
 <hibernate-mapping auto-import="false" default-lazy="false">
 	<import class="com.lake.model.lakes" />
-	<class name="com.lake.model.impl.lakesImpl" table="Sample_lakes">
+	<class name="com.lake.model.impl.lakesImpl" table="sample_lakes">
 		<id name="lakeid" type="int">
 			<generator class="increment" />
 		</id>
 		<property name="name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
 		<property name="url" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="jan" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="feb" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="mar" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="apr" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="may" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="june" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="july" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="aug" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="sep" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="oct" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="nov" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="dec_" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
 	</class>
 </hibernate-mapping>

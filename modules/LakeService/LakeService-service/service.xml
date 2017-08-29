@@ -3,10 +3,22 @@
 
 <service-builder package-path="com.lake">
 	<namespace>Sample</namespace>
-    <entity name="lakes" local-service="true" remote-service="false">
+    <entity name="lakes" local-service="true" remote-service="false" table="sample_lakes">
         <column name="lakeid" type="int" primary="true" id-type="increment"></column>
         <column name="name" type="String"></column>
         <column name="url" type="String"></column>
+        <column name="jan" type="double"></column>
+        <column name="feb" type="double"></column>
+        <column name="mar" type="double"></column>
+        <column name="apr" type="double"></column>
+        <column name="may" type="double"></column>
+        <column name="june" type="double"></column>
+        <column name="july" type="double"></column>
+        <column name="aug" type="double"></column>
+        <column name="sep" type="double"></column>
+        <column name="oct" type="double"></column>
+        <column name="nov" type="double"></column>
+        <column name="dec_" type="double"></column>
     </entity>
 	
 </service-builder>

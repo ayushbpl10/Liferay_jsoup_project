@@ -313,6 +313,18 @@ public class lakesPersistenceImpl extends BasePersistenceImpl<lakes>
 		lakesImpl.setLakeid(lakes.getLakeid());
 		lakesImpl.setName(lakes.getName());
 		lakesImpl.setUrl(lakes.getUrl());
+		lakesImpl.setJan(lakes.getJan());
+		lakesImpl.setFeb(lakes.getFeb());
+		lakesImpl.setMar(lakes.getMar());
+		lakesImpl.setApr(lakes.getApr());
+		lakesImpl.setMay(lakes.getMay());
+		lakesImpl.setJune(lakes.getJune());
+		lakesImpl.setJuly(lakes.getJuly());
+		lakesImpl.setAug(lakes.getAug());
+		lakesImpl.setSep(lakes.getSep());
+		lakesImpl.setOct(lakes.getOct());
+		lakesImpl.setNov(lakes.getNov());
+		lakesImpl.setDec_(lakes.getDec_());
 
 		return lakesImpl;
 	}
